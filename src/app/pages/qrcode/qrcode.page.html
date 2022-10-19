@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="tit">GENERAR QR ASISTENCIA CLASE: </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ola">
+    <ngx-qrcode [elementType]="elementType" [value]="value" qrc-class="codigoqr"></ngx-qrcode>
+
+    <ion-input placeholder="Presione el botón Iniciar Clase para generar un código de asistencia." [(ngModel)]="value" disabled="true">
+    </ion-input>
+
+    <ion-button expand="full" color="success" (click)="generarCodigo()">Iniciar Clase</ion-button>
+
+</ion-content>

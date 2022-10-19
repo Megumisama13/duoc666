@@ -1,0 +1,28 @@
+<ion-content>
+  <div class="fondo">
+
+
+    <form [formGroup]="usuario" (ngSubmit)="ingresar()">  
+      <ion-card>
+        <img src="../../../assets/img/duoc.png" alt="ta mala" class="imagen_login" />
+        <ion-card-header>
+          <ion-card-title>RegistrApp</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-card-subtitle class="tit">INGRESAR</ion-card-subtitle>
+          <ion-item>
+            <ion-label>Usuario</ion-label>
+            <ion-input formControlName="correo" TRIM placeholder="Correo institucional"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Contraseña</ion-label>
+            <ion-input formControlName="clave" placeholder="*********" TRIM type="password"></ion-input>
+          </ion-item>
+          <a routerLink="/recuperar" class="recu">¿Olvidaste tu contraseña?</a>
+          <ion-button class="log" color="success" type="submit">Iniciar sesión</ion-button>
+          <a routerLink="/registrar" class="reg">Registrar usuario</a>
+        </ion-card-content>
+      </ion-card>
+    </form>  
+  </div>
+</ion-content>

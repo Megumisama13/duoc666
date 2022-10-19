@@ -1,0 +1,43 @@
+<ion-content>
+  <div class="fond">
+    <ion-card>
+      <img src="../../../assets/img/duoc.png" alt="ta mala" class="imagen_login" />
+      <ion-card-header>
+        <ion-card-title>Momento Duoc</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-card-subtitle class="rct">RECUPERAR CONTRASEÑA</ion-card-subtitle>
+        <ion-item>
+          <ion-label>Correo</ion-label>
+          <ion-input type="text" TRIM placeholder="Ingrese correo institucional" [(ngModel)]="user"></ion-input>
+        </ion-item>
+        <ion-button expand="block" color="success" (click)="setOpen(true)">Enviar correo</ion-button>
+        <p>__________________________________</p>
+        <ion-button expand="block" color="danger" href='/login'>Volver</ion-button>
+        <ion-modal [isOpen]="isModalOpen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Usuario:</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpen(false)">Cerrar</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+                Se ha enviado un correo con las instrucciones para recuperar su contraseña.
+              </p>
+              <p>
+                Si el correo no ha llegado en los proximos dos minutos presione reenviar o revise su bandeja de spam.
+              </p>
+              <ion-button color="success" (click)="correoEnviado()">
+                Reenviar correo
+              </ion-button>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,45 @@
+.fondo{
+    height: 100vh;
+    background-image: url("../.../../../../assets/img/sede_pte-alto-1920x600.jpg");
+    background-size: cover;
+    text-align:center;
+}
+
+ion-card{
+    background: linear-gradient(#FFFFFF,#162b4e);
+    margin: 0 auto;
+    top: 8vh;
+    height: 63vh;
+    width: 40vh;
+    display: block;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: center;
+
+    .imagen_login{
+        width: 80%;
+    }
+}
+
+.pepe{
+    font-weight:bolder;
+}
+
+.pipi{
+    margin-top: 0vh;
+}
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+    .fondo {
+        ion-card {
+            height: 190vw;
+            width: 85vw;
+        }
+    }
+}

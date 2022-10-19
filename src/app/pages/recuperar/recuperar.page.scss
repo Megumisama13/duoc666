@@ -1,0 +1,92 @@
+@use '../../global.scss';
+
+
+.fond{
+    height: 100vh;
+    background-image: url("../../../assets/img/sede_pte-alto-1920x600.jpg");
+    background-size: cover;
+    text-align:center;
+}
+
+ion-card{
+    background: linear-gradient(#FFFFFF,#162b4e);
+    margin: 0 auto;
+    top: 50vh;
+    height: 75vh;
+    width: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .imagen_login{
+        width: 80%;
+    }
+
+    ion-card-header{
+        ion-card-title{
+            justify-content: center;
+            font-family: 'Merriweather', serif;
+            font-style: italic;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+    }
+
+    ion-item{
+        width: 42vh;
+        ion-label{
+            font-size: medium;
+            font-weight: bold;
+        }
+    }
+
+    ion-card-subtitle{
+        margin-top: 1vh;
+    }
+
+    .log{
+        margin-top: 3vh;
+        margin-bottom: 0 auto;
+        text-decoration: none;
+        font-size: large;
+        font-weight: lighter;
+        width: 25vh;
+    }
+
+}
+
+
+.rct{
+    color: black;
+    margin-top: 5vh;
+    font-size: xx-large;
+    font-weight: bolder;
+    bottom: 5vh;
+
+}
+
+ion-header{
+    ion-toolbar{
+        background-color: #162b4e;
+        ion-title{
+            font: italic;
+            font-weight: bolder;
+
+        }
+
+    }
+}
+
+
+
+
+
+@media (max-width: 400px) {
+    .fondo {
+        ion-card {
+            width: 97vw;
+        }
+    }
+}
